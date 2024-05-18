@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #fff4f4;
+    padding: 0.5% 3%;
+}
+.shop-logo{
+    width: 150px;
+}
+.left-part-logo, .right-part{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.right-part{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.right-part div{
+    margin-right: 2rem;
+}
+.search-input{
+    height: 2rem;
+    width: 13rem;
+    border: none;
+    padding-left: 3%;
+}
+.account-image{
+    width: 40px;
+    border-radius:  50px;
+}
+.shopping-cart{
+    width: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    transition: 0.2s;
+}
+a:hover{
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5% 3%;
+    padding-top: 3%; !important
+}
+.left-nav-links, .right-nav-links{
+    display: flex;
+    width: 50%;
+}
+.right-nav-links{
+    justify-content: end;
+}
+
+.introduction-div{
+    display: flex;
+    background-color: #f8d4e4;
+    padding: 0.5% 3%;
+}
+.left-introduction-div, .right-introduction-div{
+    display: flex;
+    width: 50%;
+}
+.right-introduction-div{
+    justify-content: center;
+}
+.right-introduction-div img{
+    width: 100rem;
+}
+.left-introduction-div{
+    align-items: center;
+}
+.left-introduction-div h1{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 5rem
+}
+.left-introduction-div div{
+    display: flex;
+    flex-direction: column;
+}
+.shop-now{
+    padding: 2%;
+    width: 10rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.shop-now:hover{
+    background-color: black;
+    color: white;
+}
+
+.best-sellers-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.best-sellers-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.best-sellers-heading h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+}
+.best-sellers-heading h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.pastries{
+    display: grid;
+    grid-template-columns: 18.5rem 18.5rem 18.5rem;
+    grid-gap: 10px;
+}
+.for-sale{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.pastry-image{
+    background-color: #c0e8dd;
+    width: 100%;;
+}
+.description{
+    text-align: center;
+}
+.name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.all-items{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem
+}
+.all-items-button{
+    width: 10rem;
+    padding: 0.8%;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+.all-items-button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.display-items-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.display-items-group{
+    display: flex;
+    justify-content: center;
+}
+.display-items-sale{
+    display: grid;
+    grid-template-columns: 18.5rem 18.5rem 18.5rem;
+    grid-gap: 10px;
+}
+.follow-us-heading{
+    text-align: center;
+}
+.bites{
+    width: 100%;
+}
+.bites-image img{
+    width: 100%;
+}
+
+footer{
+    background-color: #fff4f4;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.footer-website{
+    display: flex;
+    justify-content: center
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    width: 25%;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.website-copyrights h1{
+    font-size: 1rem
+}
+.head h1{
+    font-size: 1rem;
+}
+.schedule, .address{
+    display: flex;
+    flex-direction: column;
+}
+.schedule h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.full-address p{
+    margin: 0;
+}
+.input-email input{
+    width: 92%;
+    padding: 3%;
+}
+.input-email button{
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 3%;
+    border:none;
+    background-color: #f8d4e4;
+}
+.input-email h4{
+    margin: 0;
+    font-weight: 400;
+}
+.socials{
+    display: flex;
+    margin-top: 2.2rem;
+    justify-content: end;
+    align-items: center;
+}
