@@ -1,19 +1,12 @@
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const carouselChildrens = [...carousel.children];
+
 
 let isDragging = false, startX, startScrollLeft;
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-  carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-})
-
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-})
 
 arrowBtns.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -41,3 +34,4 @@ const dragStop = () => {
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
