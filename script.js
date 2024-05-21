@@ -38,20 +38,6 @@ const dragStop = () => {
   carousel.classList.remove("dragging");
 }
 
-const infiniteScroll = () => {
-  if(carousel.scrollLeft === 0){
-      carousel.classList.add("no-transition");
-      carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth);
-      carousel.classList.remove("no-transition");
-  }
-  else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth){
-      carousel.classList.add("no-transition");
-      carousel.scrollLeft = carousel.offsetWidth;
-      carousel.classList.remove("no-transition");
-  }
-}
-
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
