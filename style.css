@@ -760,7 +760,7 @@ footer{
         z-index: 1000;
     }
     .active .list-cart{
-        left: calc(100% - 435px);
+        left: calc(100% - 400px);
     }
     .active body{
         transform: translateX(-100px);
