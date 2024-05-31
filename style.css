@@ -663,6 +663,7 @@ footer{
         z-index: 100;
     }
     .left-part-logo{
+        margin-left: 1rem;
         width: 100%;
         display: flex;
         justify-content: center;
